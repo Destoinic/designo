@@ -1,0 +1,3 @@
+ -> in index pus h2, toate nebuniile, cu margin 0. tip: ia-le pe rand ca se strica tot css-ul
+
+ -> inlocuit imaginile improvizate cu imaginile din folderul assets/shared

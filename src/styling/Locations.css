@@ -1,0 +1,66 @@
+.locations-container .section-locations {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.locations-container .location {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.locations-container .location .location-info,
+.locations-container .location .location-image img {
+  border-radius: 20px;
+}
+
+.locations-container .location .location-info {
+  width: 730px;
+
+  background-color: rgba(225, 173, 155, 0.2);
+
+  background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+
+  background-position: left 0 bottom 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations-container .location-info > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+
+  width: 540px;
+}
+
+.locations-container .location-info h2 {
+  margin: 0;
+  color: var(--primary-peach);
+  font-weight: 500;
+}
+
+.locations-container .location-office {
+  display: flex;
+
+  gap: 30px;
+}
+
+.locations-container .location-office p {
+  display: flex;
+  flex-direction: column;
+
+  width: 255px;
+}
+
+.locations-container .location .location-image img {
+  height: 100%;
+  width: 100%;
+}

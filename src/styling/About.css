@@ -1,0 +1,96 @@
+.about-container .obj {
+  top: 475px;
+  width: 1000px;
+  height: 600px;
+  background-color: var(--secondary-white);
+
+  position: absolute;
+  z-index: -1;
+
+  border-radius: 300px 300px 300px 0;
+}
+
+.about-container .rotate {
+  top: 1770px;
+  right: 0px;
+  rotate: 180deg;
+}
+
+.about-container .hero {
+  width: auto;
+  height: 480px;
+
+  background-color: var(--primary-peach);
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-size: contain;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 10%;
+}
+
+.about-container .hero .hero-parts {
+  display: flex;
+  height: 100%;
+}
+
+.about-container .hero .parts-info {
+  margin-left: 100px;
+  width: 50%;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container .hero .hero-parts .parts-info h1 {
+  color: var(--primary-white);
+
+  font-weight: 400;
+}
+
+.about-container .hero .hero-parts .parts-info p {
+  color: var(--primary-white);
+  padding-right: 100px;
+}
+
+.about-container .hero .hero-parts .parts-image img {
+  border-radius: 0 20px 20px 0;
+}
+
+.about-container .section-about {
+  margin-top: 120px;
+  height: 640px;
+
+  background-color: rgba(225, 173, 155, 0.2);
+
+  display: flex;
+
+  /* INTREBARE : DE CE IMAGINEA NU PRIMESTE BORDER RADIUS */
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.about-container .section-about .about-info {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.about-container .section-about .about-info div {
+  width: 445px;
+}
+.about-container .section-about .about-info h2 {
+  margin: 0;
+
+  color: var(--primary-peach);
+  font-weight: 500;
+}
+.about-container .section-about .about-info p {
+  margin-top: 40px;
+}

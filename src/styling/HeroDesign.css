@@ -1,0 +1,34 @@
+.design-container .hero {
+  height: 252px;
+
+  background-color: var(--primary-peach);
+  background-image: url("/assets/web-design/desktop/bg-pattern-intro-web.svg");
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.design-container .hero .hero-parts {
+  height: 100%;
+}
+
+.design-container .hero .hero-parts .parts-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--primary-white);
+}
+
+.design-container .hero .hero-parts .parts-info h1 {
+  font-weight: 500;
+}
+
+.design-container .hero .hero-parts .parts-info p {
+  width: 400px;
+  text-align: center;
+}

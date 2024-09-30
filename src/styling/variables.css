@@ -1,0 +1,12 @@
+:root {
+  /* primary colors */
+  --primary-peach: #e7816b;
+  --primary-black: #1d1c1e;
+  --primary-white: #ffffff;
+  /* secondary colors */
+  --secondary-peach: #ffad9b;
+  --secondary-black: #333136;
+  --secondary-white: #f1f3f5;
+
+  font-family: Jost, sans-serif;
+}

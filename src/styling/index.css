@@ -1,0 +1,145 @@
+/* 
+:root {
+  primary colors
+  --primary-peach: #e7816b;
+  --primary-black: #1d1c1e;
+  --primary-white: #ffffff;
+   secondary colors 
+  --secondary-peach: #ffad9b;
+  --secondary-black: #333136;
+  --secondary-white: #f1f3f5;
+
+  font-family: Jost, sans-serif; 
+}
+*/
+
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: medium;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h2 {
+  font-weight: medium;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-weight: medium;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* de sters "button" cand bag clasele */
+.dark-mode {
+  color: var(--primary-white);
+}
+
+button,
+button.light-mode {
+  background: none;
+  border: none;
+  font-family: Jost;
+  background-color: var(--primary-peach);
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--primary-white);
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+
+  width: 150px;
+  height: 60px;
+}
+
+button.light-mode:hover {
+  background-color: var(--secondary-peach);
+}
+
+button.dark-mode {
+  background: none;
+  border: none;
+  font-family: Jost;
+  background-color: var(--primary-white);
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--primary-black);
+  cursor: pointer;
+
+  width: 150px;
+  height: 60px;
+}
+
+button.dark-mode:hover {
+  background-color: var(--secondary-peach);
+  color: var(--primary-white);
+}
+
+input,
+textarea {
+  margin-top: 25px;
+  height: 38px;
+  width: 400px;
+
+  font-family: Jost;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+input,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid var(--primary-white);
+  color: var(--primary-white);
+}
+
+textarea {
+  resize: none;
+  height: 102px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li a {
+  /* color: var(--secondary-black); */
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+  color: var(--primary-peach);
+}
+
+/* adaugat cand faceam pagina web-design si erau clasele globale */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1111px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
