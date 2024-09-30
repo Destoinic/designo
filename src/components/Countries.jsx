@@ -1,4 +1,5 @@
 import "../styling/Countries.css";
+import Redirect from "./Redirect";
 
 const Countries = () => {
   return (
@@ -11,7 +12,9 @@ const Countries = () => {
           />
         </div>
         <h3>CANADA</h3>
-        <button>SEE LOCATION</button>
+        <Redirect to="/locations">
+          <button className="light-mode">SEE LOCATION</button>
+        </Redirect>
       </div>
       <div className="country">
         <div>
@@ -20,8 +23,11 @@ const Countries = () => {
             alt="illustration australia"
           />
         </div>
+
         <h3>AUSTRALIA</h3>
-        <button>SEE LOCATION</button>
+        <Redirect to="/locations">
+          <button className="light-mode">SEE LOCATION</button>
+        </Redirect>
       </div>
       <div className="country">
         <div>
@@ -31,7 +37,9 @@ const Countries = () => {
           />
         </div>
         <h3>UNITED KINGDOM</h3>
-        <button>SEE LOCATION</button>
+        <Redirect to="/locations">
+          <button className="light-mode">SEE LOCATION</button>
+        </Redirect>
       </div>
     </section>
   );

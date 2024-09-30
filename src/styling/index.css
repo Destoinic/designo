@@ -20,6 +20,13 @@ span {
   padding: 0;
 }
 
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 h1 {
   font-weight: medium;
   font-size: 48px;
@@ -40,12 +47,6 @@ h3 {
   letter-spacing: 5px;
 }
 
-body {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-}
 /* de sters "button" cand bag clasele */
 .dark-mode {
   color: var(--primary-white);
@@ -102,6 +103,8 @@ textarea {
   border-bottom: 2px solid rgb(255, 255, 255, 0.5);
   color: rgb(255, 255, 255, 0.5);
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 input,
@@ -124,6 +127,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: none;
+}
+
+a:visited {
+  color: none;
 }
 
 ul li a {
@@ -141,5 +149,33 @@ ul li a:hover {
     max-width: 1111px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .container {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .obj {
+    display: none;
+  }
+
+  .hero {
+    width: 689px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .obj {
+    display: none;
   }
 }

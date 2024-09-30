@@ -1,0 +1,20 @@
+.quality div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quality img {
+  background-image: url("/public/assets/shared/desktop/bg-pattern-small-circle.svg");
+}
+
+.quality p {
+  text-align: center;
+  /* width: 70%; */
+
+  color: var(--secondary-black);
+}
+
+.quality h3 {
+  color: var(--secondary-black);
+}

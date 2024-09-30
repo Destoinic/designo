@@ -1,0 +1,6 @@
+.qualities-list {
+  margin-top: 120px;
+
+  display: flex;
+  gap: 30px;
+}

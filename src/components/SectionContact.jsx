@@ -1,6 +1,5 @@
-import { NavLink } from "react-router-dom";
 import "../styling/SectionContact.css";
-
+import Redirect from "../components/Redirect";
 const SectionContact = () => {
   return (
     <section className="section-contact">
@@ -12,14 +11,9 @@ const SectionContact = () => {
         </p>
       </div>
       <div className="contact-button">
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => {
-            return isActive ? "active-link" : "";
-          }}
-        >
+        <Redirect to="/contact">
           <button className="dark-mode">GET IN TOUCH</button>
-        </NavLink>
+        </Redirect>
       </div>
     </section>
   );

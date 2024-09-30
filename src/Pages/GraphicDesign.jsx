@@ -23,18 +23,21 @@ const GraphicDesign = () => {
 
         <section className="section-projects">
           <div className="projects-grid">
-            <ProjectCell projectName={"change"}>
-              <h3>TIM BROWN</h3>
-              <p>A book cover designed for Tim Brown’s new release, ‘Change’</p>
-            </ProjectCell>
-            <ProjectCell projectName={"boxed-water"}>
-              <h3>BOXER WATER</h3>
-              <p>A simple packaging concept made for Boxed Water</p>
-            </ProjectCell>
-            <ProjectCell projectName={"science"}>
-              <h3>SCIENCE!</h3>
-              <p>A poster made in collaboration with the Federal Art Project</p>
-            </ProjectCell>
+            <ProjectCell
+              projectName="change"
+              title="TIM BROWN"
+              body="A book cover designed for Tim Brown’s new release, ‘Change’"
+            />
+            <ProjectCell
+              projectName="boxed-water"
+              title="BOXER WATER"
+              body="A simple packaging concept made for Boxed Water"
+            />
+            <ProjectCell
+              projectName="science"
+              title="SCIENCE!"
+              body="A poster made in collaboration with the Federal Art Project"
+            />
           </div>
         </section>
 
@@ -42,20 +45,18 @@ const GraphicDesign = () => {
           <div className="container-design">
             <ul>
               {/* INTREBARE : TRANSITION EFFECT HOVER */}
-              <DesignCell designName={"web"}>
-                <h2>WEB DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
-              <DesignCell designName={"app"}>
-                <h2>APP DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
+              <DesignCell
+                designName="web"
+                title="WEB DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-web-design.jpg"
+              />
+              <DesignCell
+                designName="app"
+                title="APP DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-app-design.jpg"
+              />
             </ul>
           </div>
         </section>

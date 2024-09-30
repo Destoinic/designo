@@ -4,13 +4,14 @@ import "../styling/Home.css";
 import SectionContact from "../components/SectionContact";
 import DesignCell from "../components/DesignCell";
 import { NavLink } from "react-router-dom";
+import QualitiesList from "../components/QualitiesList";
 
 const Home = () => {
   return (
     <div className="home-container">
+      <div className="obj" />
+      <div className="obj rotate" />
       {/* 2 divs for background --secondary-white objects in background */}
-      <div className="obj"></div>
-      <div className="obj rotate"></div>
 
       <div className="container">
         <NavBar />
@@ -47,32 +48,29 @@ const Home = () => {
         <section className="section-design">
           <div className="container-design">
             <ul>
-              <DesignCell designName={"web"}>
-                <h2>WEB DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
-
-              <DesignCell designName={"app"}>
-                <h2>APP DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
-              <DesignCell designName={"graphic"}>
-                <h2>GRAPHIC DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
+              <DesignCell
+                designName="web"
+                title="WEB DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-web-design-large.jpg"
+              />
+              <DesignCell
+                designName="app"
+                title="APP DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-app-design.jpg"
+              />
+              <DesignCell
+                designName="graphic"
+                title="GRAPHIC DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-graphic-design.jpg"
+              />
             </ul>
           </div>
         </section>
-        <section className="section-qualities">
+        <QualitiesList />
+        {/* <section className="section-qualities">
           <div className="qualities">
             <img
               src="/assets/home/desktop/illustration-passionate.svg"
@@ -109,7 +107,7 @@ const Home = () => {
               to give them the best experience a company can provide.
             </p>
           </div>
-        </section>
+        </section> */}
         <SectionContact />
       </div>
       <Footer />

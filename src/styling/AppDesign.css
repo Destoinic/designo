@@ -26,14 +26,10 @@
 }
 
 .app-container .section-design .container-design .design-web {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/home/desktop/image-web-design.jpg");
   background-repeat: no-repeat;
 }
 
 .app-container .section-design .container-design .design-graphic {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/home/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
 }
 
@@ -42,16 +38,6 @@
 
   width: 100%;
   height: 308px;
-}
-
-.app-container .section-design .container-design .design-web:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/home/desktop/image-web-design.jpg");
-}
-
-.app-container .section-design .container-design .design-graphic:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/home/desktop/image-graphic-design.jpg");
 }
 
 .app-container .section-design .container-design ul {

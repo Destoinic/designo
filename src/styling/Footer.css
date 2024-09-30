@@ -61,3 +61,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+.office .socials img {
+  cursor: pointer;
+}

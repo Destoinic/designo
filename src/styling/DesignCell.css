@@ -1,20 +1,49 @@
-li {
+li.design-cell-container {
   width: 541px;
 
   border-radius: 20px;
 }
 
-li a {
+li.design-cell-container a {
   width: 100%;
   height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
+  position: relative;
+
+  z-index: 0;
+
+  border-radius: 20px;
 }
 
-li h2 {
+li.design-cell-container a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 20px;
+
+  opacity: 0.5;
+
+  transition: opacity 0.5s;
+
+  z-index: 1;
+}
+
+.design-cell-container a:hover::before {
+  opacity: 0.7;
+}
+
+.design-cell-container a > * {
+  z-index: 2;
+}
+
+.design-cell-container h2 {
   color: var(--primary-white);
   font-weight: 500;
 }
@@ -24,14 +53,14 @@ li h2 {
   justify-content: center;
 }
 
-li h3 {
+li.design-cell-container h3 {
   color: var(--primary-white);
   font-weight: 400;
   font-size: 16px;
   margin-top: -22px;
 }
 
-li span {
+li.design-cell-container span {
   color: var(--primary-peach);
   font-size: 24px;
   font-weight: 400;

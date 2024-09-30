@@ -23,57 +23,55 @@ const AppDesign = () => {
 
         <section className="section-projects">
           <div className="projects-grid">
-            <ProjectCell projectName={"airfilter"}>
-              <h3>AIRFILTER</h3>
-              <p>
-                Solving the problem of poor indoor air quality by filtering the
-                air
-              </p>
-            </ProjectCell>
-            <ProjectCell projectName={"eyecam"}>
-              <h3>EYECAM</h3>
-              <p>
-                Product that lets you edit your favorite photos and videos at
-                any time
-              </p>
-            </ProjectCell>
-            <ProjectCell projectName={"faceit"}>
-              <h3>FACEIT</h3>
-              <p>
-                Get to meet your favorite internet superstar with the faceit app
-              </p>
-            </ProjectCell>
-            <ProjectCell projectName={"todo"}>
-              <h3>TODO</h3>
-              <p>
-                A todo app that features cloud sync with light and dark mode
-              </p>
-            </ProjectCell>
-            <ProjectCell projectName={"loopstudios"}>
-              <h3>LOOPSTUDIOS</h3>
-              <p>A VR experience app made for Loopstudios</p>
-            </ProjectCell>
+            <ProjectCell
+              projectName="airfilter"
+              title="AIRFILTER"
+              body="Solving the problem of poor indoor air quality by filtering the
+                air"
+            />
+
+            <ProjectCell
+              projectName="eyecam"
+              title="EYECAM"
+              body="Product that lets you edit your favorite photos and videos at
+                any time"
+            />
+
+            <ProjectCell
+              projectName="faceit"
+              title="FACEIT"
+              body="Get to meet your favorite internet superstar with the faceit app"
+            />
+
+            <ProjectCell
+              projectName="todo"
+              title="TODO"
+              body="A todo app that features cloud sync with light and dark mode"
+            />
+
+            <ProjectCell
+              projectName="loopstudios"
+              title="LOOPSTUDIOS"
+              body="A VR experience app made for Loopstudios"
+            />
           </div>
         </section>
 
         <section className="section-design">
           <div className="container-design">
             <ul>
-              {/* INTREBARE : TRANSITION EFFECT HOVER */}
-              <DesignCell designName={"web"}>
-                <h2>WEB DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
-              <DesignCell designName={"graphic"}>
-                <h2>GRAPHIC DESIGN</h2>
-                <div className="design-contents">
-                  <h3>VIEW PROJECTS</h3>
-                  <span>&#62;</span>
-                </div>
-              </DesignCell>
+              <DesignCell
+                designName="web"
+                title="WEB DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-web-design.jpg"
+              />
+              <DesignCell
+                designName="graphic"
+                title="GRAPHIC DESIGN"
+                body="VIEW PROJECTS"
+                backgroundURL="/assets/home/desktop/image-graphic-design.jpg"
+              />
             </ul>
           </div>
         </section>

@@ -1,15 +1,22 @@
 .project-cell {
-  /* INTREBARE : DE CE NU FACE ROUNDED BORDERS */
-  border-radius: 20px;
-  background-clip: padding-box;
+  transition: 0.5s;
+}
+/* INTREBARE : on hover nu se coloreaza si h3 */
+.project-cell:hover {
+  color: var(--primary-white);
+
+  background-color: var(--primary-peach);
 }
 
 .project-cell .cell-image {
   width: 350px;
   height: 320px;
 }
+
 .cell-image img {
   width: 100%;
+
+  border-radius: 20px 20px 0 0;
 }
 
 .project-cell .cell-info {
@@ -20,6 +27,8 @@
 
   height: 158px;
   background-color: rgba(225, 173, 155, 0.2);
+
+  border-radius: 0 0 20px 20px;
 }
 
 .project-cell .cell-info h3 {
