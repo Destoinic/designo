@@ -1,108 +1,195 @@
-.home-container .obj {
-  top: 475px;
-  width: 1000px;
-  height: 600px;
-  background-color: var(--secondary-white);
+/* @media screen and (min-width: 1200px) {
+  .home-container .obj {
+    top: 475px;
+    width: 1000px;
+    height: 600px;
+    background-color: var(--secondary-white);
 
-  position: absolute;
-  z-index: -1;
+    position: absolute;
+    z-index: -1;
 
-  border-radius: 300px 300px 300px 0;
+    border-radius: 300px 300px 300px 0;
+  }
+
+  .home-container .rotate {
+    top: 1770px;
+    right: 0;
+
+    rotate: 180deg;
+  }
+
+  .home-container .hero {
+    width: auto;
+    height: 640px;
+
+    background-color: var(--primary-peach);
+    background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+
+  .home-container .hero .hero-parts {
+    display: flex;
+    height: 100%;
+  }
+
+  .home-container .hero .parts-info {
+    margin-left: 100px;
+    width: 50%;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home-container .hero .hero-parts .parts-info h1 {
+    color: var(--primary-white);
+
+    font-weight: 500;
+  }
+
+  .home-container .hero .hero-parts .parts-info p {
+    color: var(--primary-white);
+    padding-right: 100px;
+  }
+
+  .home-container .hero .hero-parts .parts-info button {
+    margin-top: 40px;
+    font-weight: 500;
+  }
+
+  .home-container .hero .hero-parts .parts-image {
+    width: 45%;
+    overflow: hidden;
+    margin-left: -44px;
+    margin-top: -20px;
+  }
+
+  .home-container .section-design .container-design {
+    margin-top: 120px;
+
+    width: 100%;
+    height: 640px;
+  }
+
+  .home-container .section-design .container-design ul {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px 36px;
+  }
+
+  .home-container .section-design .container-design ul li a {
+    width: 100%;
+    height: 100%;  */
+
+/* astea fac ceva? -> */
+/*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-container .section-design .container-design .design-web {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .home-container .section-design .container-design .design-app {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .home-container .section-design .container-design .design-graphic {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
+.home-container {
+  .hero {
+    height: 843px;
+
+    background-image: url("/public/assets/home/desktop/bg-pattern-hero-home.svg");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: 400% 35%;
+
+    background-color: var(--primary-peach);
+
+    .hero-parts {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .parts-info {
+      margin: 30px 60px 30px 60px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > * {
+        text-align: center;
+      }
+
+      > h1,
+      p {
+        color: var(--primary-white);
+      }
+
+      h1 {
+        font-weight: 500;
+      }
+
+      p {
+        max-width: 445px;
+      }
+
+      button {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    .parts-image {
+      overflow: hidden;
+      margin-top: -140px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .container-design {
+    margin-top: 120px;
+
+    width: 100%;
+    height: 690px;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 25px;
+
+      > * {
+        height: 100%;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
-
-.home-container .rotate {
-  top: 1770px;
-  right: 0;
-
-  rotate: 180deg;
-}
-.home-container .hero {
-  width: auto;
-  height: 640px;
-
-  background-color: var(--primary-peach);
-  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: 100%;
-}
-
-.home-container .hero .hero-parts {
-  display: flex;
-  height: 100%;
-}
-
-.home-container .hero .parts-info {
-  margin-left: 100px;
-  width: 50%;
-
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home-container .hero .hero-parts .parts-info h1 {
-  color: var(--primary-white);
-
-  font-weight: 400;
-}
-
-.home-container .hero .hero-parts .parts-info p {
-  color: var(--primary-white);
-  padding-right: 100px;
-}
-
-.home-container .hero .hero-parts .parts-info button {
-  margin-top: 40px;
-  font-weight: 600;
-}
-
-.home-container .hero .hero-parts .parts-image {
-  width: 45%;
-  overflow: hidden;
-  margin-left: -44px;
-  margin-top: -20px;
-}
-
-.home-container .section-design .container-design {
-  margin-top: 120px;
-
-  width: 100%;
-  height: 640px;
-}
-
-.home-container .section-design .container-design ul {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 28px 36px;
-}
-
-.home-container .section-design .container-design ul li a {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-container .section-design .container-design .design-web {
-  grid-row: 1 / 3;
-  grid-column: 1 / 2;
-}
-
-.home-container .section-design .container-design .design-app {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-}
-
-.home-container .section-design .container-design .design-graphic {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
+/* } */

@@ -1,6 +1,19 @@
-.qualities-list {
-  margin-top: 120px;
+/* @media screen and (min-width: 1200px) {
+  .qualities-list {
+    margin-top: 120px;
 
+    display: flex;
+    gap: 30px;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) and (min-width: 768) { */
+.qualities-list {
+  max-width: 690px;
+
+  margin-top: 120px;
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 32px;
 }
+/* } */

@@ -1,3 +1,58 @@
+/* @media screen and (min-width: 1200px) {
+  .section-contact {
+    margin-top: 120px;
+    border-radius: 20px;
+
+    background-color: var(--primary-peach);
+    background-image: linear-gradient(
+        to left,
+        rgb(231, 130, 107),
+        rgba(231, 130, 107, 0)
+      ),
+      url("/public/assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-size: 750px;
+    background-position: 350px 150px;
+    display: flex;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 459px;
+    margin-left: 95px;
+    height: 292px;
+  }
+  .section-contact h2 {
+    width: 310px;
+    color: var(--primary-white);
+    font-weight: 600;
+  }
+
+  .section-contact p {
+    margin-top: -16px;
+    color: var(--secondary-white);
+  }
+
+  .section-contact .contact-button {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    margin-right: 95px;
+  }
+
+  .section-contact button {
+    font-weight: 600;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
 .section-contact {
   margin-top: 120px;
   border-radius: 20px;
@@ -9,43 +64,43 @@
       rgba(231, 130, 107, 0)
     ),
     url("/public/assets/shared/desktop/bg-pattern-call-to-action.svg");
+
   background-size: 750px;
-  background-position: 350px 150px;
+  background-position: -300px 200px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 350px;
 
   position: relative;
   z-index: 1;
-}
 
-.section-contact .contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .contact-info {
+    margin: 58px 58px 0 58px;
 
-  width: 459px;
-  margin-left: 95px;
-  height: 292px;
-}
-.section-contact h2 {
-  width: 310px;
-  color: var(--primary-white);
-  font-weight: 600;
-}
+    > * {
+      text-align: center;
+    }
+    h2,
+    p {
+      color: var(--primary-white);
+    }
+    h2 {
+      margin: 0;
+      padding: 0 100px 0 100px;
+      font-weight: 500;
+    }
 
-.section-contact p {
-  margin-top: -16px;
-  color: var(--secondary-white);
-}
+    p {
+      margin-top: 20px;
+      padding: 0 60px 0 60px;
+    }
+  }
 
-.section-contact .contact-button {
-  width: 50%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-
-  margin-right: 95px;
+  button {
+    margin-top: 20px;
+    font-weight: 600;
+  }
 }
-
-.section-contact button {
-  font-weight: 600;
-}
+/* } */
