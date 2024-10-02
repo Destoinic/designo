@@ -37,7 +37,7 @@ const About = () => {
           <div className="about-image">
             <img
               src="/assets/about/desktop/image-world-class-talent.jpg"
-              alt="World-class taleng image"
+              alt="World-class talent image"
             />
           </div>
           <div className="about-info">
@@ -62,8 +62,8 @@ const About = () => {
 
         <Countries />
 
-        <section className="section-about">
-          <div className="about-info">
+        <section className="second section-about">
+          <div className="about-info ">
             <div>
               <h2>The real deal</h2>
               <p>

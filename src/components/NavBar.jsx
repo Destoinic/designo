@@ -1,9 +1,11 @@
 import Redirect from "../components/Redirect";
 import "../styling/NavBar.css";
 
-const NavBar = ({ mode }) => {
+const NavBar = ({ mode, className }) => {
+  // useState pentru button burger
+
   return (
-    <nav>
+    <nav className={className}>
       <div className="container-nav">
         <div className="logo">
           <img src="/assets/home/desktop/logo.svg" alt="" />
@@ -17,6 +19,8 @@ const NavBar = ({ mode }) => {
           {/* )} */}
         </div>
         <div className="links">
+          {/* !! +768px sare in aer */}
+          <button className="burger" />
           <ul>
             {/* {mode === "dark-mode" ? ( */}
             <li className="dark-mode">

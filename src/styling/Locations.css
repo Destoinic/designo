@@ -1,66 +1,149 @@
-.locations-container .section-locations {
-  display: flex;
-  flex-direction: column;
+/* @media screen and (min-width: 1200px) {
+  .locations-container .section-locations {
+    display: flex;
+    flex-direction: column;
 
-  gap: 30px;
+    gap: 30px;
+  }
+
+  .locations-container .location {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 30px;
+  }
+
+  .locations-container .location .location-info,
+  .locations-container .location .location-image img {
+    border-radius: 20px;
+  }
+
+  .locations-container .location .location-info {
+    width: 730px;
+
+    background-color: rgba(225, 173, 155, 0.2);
+
+    background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-repeat: no-repeat;
+
+    background-position: left 0 bottom 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .locations-container .location-info > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    width: 540px;
+  }
+
+  .locations-container .location-info h2 {
+    margin: 0;
+    color: var(--primary-peach);
+    font-weight: 500;
+  }
+
+  .locations-container .location-office {
+    display: flex;
+
+    gap: 30px;
+  }
+
+  .locations-container .location-office p {
+    display: flex;
+    flex-direction: column;
+
+    width: 255px;
+  }
+
+  .locations-container .location .location-image img {
+    height: 100%;
+    width: 100%;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
+.locations-container {
+  .section-locations {
+    display: flex;
+    flex-direction: column;
+
+    gap: 120px;
+  }
+
+  .location {
+    .location-info,
+    .location-image {
+      border-radius: 20px;
+    }
+
+    height: 676px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .location-info {
+      height: 326px;
+
+      background-color: rgba(225, 173, 155, 0.2);
+
+      background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+      background-repeat: no-repeat;
+
+      background-position: left 0 bottom 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+
+        gap: 24px;
+
+        width: 540px;
+      }
+
+      h2 {
+        margin: 0;
+        color: var(--primary-peach);
+        font-weight: 500;
+      }
+
+      .location-office {
+        display: flex;
+
+        gap: 30px;
+
+        p {
+          display: flex;
+          flex-direction: column;
+
+          width: 255px;
+        }
+      }
+    }
+
+    .location-image {
+      height: 50%;
+      width: 100%;
+      img {
+        display: none;
+      }
+
+      background-image: url("/public/assets/locations/tablet/image-map-canada.png");
+    }
+  }
+
+  .location.first,
+  .location.third {
+    flex-direction: column-reverse;
+  }
 }
-
-.locations-container .location {
-  display: flex;
-  justify-content: space-between;
-
-  gap: 30px;
-}
-
-.locations-container .location .location-info,
-.locations-container .location .location-image img {
-  border-radius: 20px;
-}
-
-.locations-container .location .location-info {
-  width: 730px;
-
-  background-color: rgba(225, 173, 155, 0.2);
-
-  background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
-  background-repeat: no-repeat;
-
-  background-position: left 0 bottom 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.locations-container .location-info > div {
-  display: flex;
-  flex-direction: column;
-
-  gap: 25px;
-
-  width: 540px;
-}
-
-.locations-container .location-info h2 {
-  margin: 0;
-  color: var(--primary-peach);
-  font-weight: 500;
-}
-
-.locations-container .location-office {
-  display: flex;
-
-  gap: 30px;
-}
-
-.locations-container .location-office p {
-  display: flex;
-  flex-direction: column;
-
-  width: 255px;
-}
-
-.locations-container .location .location-image img {
-  height: 100%;
-  width: 100%;
-}
+/* } */

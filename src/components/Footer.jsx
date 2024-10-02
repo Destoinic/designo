@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="office">
-        <NavBar mode="dark-mode" />
+        <NavBar mode="dark-mode" className="footer" />
         <hr />
         <div>
           <div className="office-container">

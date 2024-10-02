@@ -10,7 +10,7 @@ const Locations = () => {
         <NavBar />
 
         <section className="section-locations">
-          <div className="location">
+          <div className="first location">
             <div className="location-info">
               <div>
                 <h2>Canada</h2>
@@ -39,7 +39,7 @@ const Locations = () => {
               />
             </div>
           </div>
-          <div className="location">
+          <div className="second location">
             <div className="location-image">
               <img
                 src="/assets/locations/desktop/image-map-australia.png"
@@ -68,7 +68,7 @@ const Locations = () => {
               </div>
             </div>
           </div>
-          <div className="location">
+          <div className="third location">
             <div className="location-info">
               <div>
                 <h2>United Kingdom</h2>

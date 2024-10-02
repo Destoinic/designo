@@ -1,42 +1,84 @@
-.project-cell {
-  transition: 0.5s;
-}
+/* @media screen and (min-width: 1200px) {
+  .project-cell {
+    transition: 0.5s;
+  } */
 /* INTREBARE : on hover nu se coloreaza si h3 */
-.project-cell:hover {
-  color: var(--primary-white);
+/* .project-cell:hover {
+    color: var(--primary-white);
 
-  background-color: var(--primary-peach);
-}
+    background-color: var(--primary-peach);
+  }
 
-.project-cell .cell-image {
-  width: 350px;
-  height: 320px;
-}
+  .project-cell .cell-image {
+    width: 350px;
+    height: 320px;
+  }
 
-.cell-image img {
-  width: 100%;
+  .cell-image img {
+    width: 100%;
 
-  border-radius: 20px 20px 0 0;
-}
+    border-radius: 20px 20px 0 0;
+  }
 
-.project-cell .cell-info {
+  .project-cell .cell-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 158px;
+    background-color: rgba(225, 173, 155, 0.2);
+
+    border-radius: 0 0 20px 20px;
+  }
+
+  .project-cell .cell-info h3 {
+    color: var(--primary-peach);
+    font-weight: 500;
+  }
+
+  .project-cell .cell-info p {
+    margin: 0 32px;
+    text-align: center;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
+.project-cell {
+  margin-top: 32px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 310px;
+  width: 689px;
 
-  height: 158px;
-  background-color: rgba(225, 173, 155, 0.2);
+  .cell-image {
+    width: 339px;
 
-  border-radius: 0 0 20px 20px;
+    img {
+      height: 100%;
+
+      border-radius: 20px 0 0 20px;
+    }
+  }
+  .cell-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    background-color: rgba(225, 173, 155, 0.2);
+
+    border-radius: 0 20px 20px 0;
+
+    h3 {
+      color: var(--primary-peach);
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0 32px;
+      text-align: center;
+    }
+  }
 }
-
-.project-cell .cell-info h3 {
-  color: var(--primary-peach);
-  font-weight: 500;
-}
-
-.project-cell .cell-info p {
-  margin: 0 32px;
-  text-align: center;
-}
+/* } */

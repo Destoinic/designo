@@ -1,96 +1,220 @@
-.about-container .obj {
-  top: 475px;
-  width: 1000px;
-  height: 600px;
-  background-color: var(--secondary-white);
+/* @media screen and (min-width: 1200px) {
+  .about-container .obj {
+    top: 475px;
+    width: 1000px;
+    height: 600px;
+    background-color: var(--secondary-white);
 
-  position: absolute;
-  z-index: -1;
+    position: absolute;
+    z-index: -1;
 
-  border-radius: 300px 300px 300px 0;
+    border-radius: 300px 300px 300px 0;
+  }
+
+  .about-container .rotate {
+    top: 1770px;
+    right: 0px;
+    rotate: 180deg;
+  }
+
+  .about-container .hero {
+    width: auto;
+    height: 480px;
+
+    background-color: var(--primary-peach);
+    background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-size: contain;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: 10%;
+  }
+
+  .about-container .hero .hero-parts {
+    display: flex;
+    height: 100%;
+  }
+
+  .about-container .hero .parts-info {
+    margin-left: 100px;
+    width: 50%;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-container .hero .hero-parts .parts-info h1 {
+    color: var(--primary-white);
+
+    font-weight: 500;
+  }
+
+  .about-container .hero .hero-parts .parts-info p {
+    color: var(--primary-white);
+    padding-right: 100px;
+  }
+
+  .about-container .hero .hero-parts .parts-image img {
+    border-radius: 0 20px 20px 0;
+  }
+
+  .about-container .section-about {
+    margin-top: 120px;
+    height: 640px;
+
+    background-color: rgba(225, 173, 155, 0.2);
+
+    display: flex; */
+
+/* INTREBARE : DE CE IMAGINEA NU PRIMESTE BORDER RADIUS */
+/* border-radius: 20px;
+
+    z-index: 1;
+  }
+
+  .about-container .section-about .about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .about-container .section-about .about-info div {
+    width: 445px;
+  }
+  .about-container .section-about .about-info h2 {
+    margin: 0;
+
+    color: var(--primary-peach);
+    font-weight: 500;
+  }
+  .about-container .section-about .about-info p {
+    margin-top: 40px;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
+.about-container {
+  .hero {
+    height: 632px;
+
+    background-color: var(--primary-peach);
+    background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: -120px -110px;
+
+    .hero-parts {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      .parts-info {
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          color: var(--primary-white);
+          font-weight: 500;
+        }
+
+        p {
+          width: 573px;
+          color: var(--primary-white);
+
+          text-align: center;
+        }
+      }
+
+      .parts-image {
+        width: 100%;
+        height: 320px;
+        img {
+          display: none;
+        }
+
+        background-image: url("/public/assets/about/tablet/image-about-hero.jpg");
+
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .section-about {
+    margin-top: 120px;
+    height: 736px;
+
+    background-color: rgba(225, 173, 155, 0.2);
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+
+    .about-info {
+      height: 426px;
+      display: flex;
+      align-items: center;
+      border-radius: 0 0 20px 20px;
+
+      background-image: url("/public/assets/shared/desktop/bg-pattern-three-circles.svg");
+
+      div {
+        height: 280px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+      }
+
+      h2 {
+        margin: 0;
+
+        color: var(--primary-peach);
+        font-weight: 500;
+      }
+
+      p {
+        text-align: center;
+        width: 572px;
+      }
+    }
+
+    .about-image {
+      width: 100%;
+      height: 320px;
+      img {
+        display: none;
+      }
+
+      background-image: url("/public/assets/about/tablet/image-world-class-talent.jpg");
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .section-about.second {
+    flex-direction: column-reverse;
+
+    .about-image {
+      background-image: url("/public/assets/about/tablet/image-real-deal.jpg");
+      background-repeat: no-repeat;
+    }
+  }
 }
-
-.about-container .rotate {
-  top: 1770px;
-  right: 0px;
-  rotate: 180deg;
-}
-
-.about-container .hero {
-  width: auto;
-  height: 480px;
-
-  background-color: var(--primary-peach);
-  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
-  background-size: contain;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: 10%;
-}
-
-.about-container .hero .hero-parts {
-  display: flex;
-  height: 100%;
-}
-
-.about-container .hero .parts-info {
-  margin-left: 100px;
-  width: 50%;
-
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-container .hero .hero-parts .parts-info h1 {
-  color: var(--primary-white);
-
-  font-weight: 400;
-}
-
-.about-container .hero .hero-parts .parts-info p {
-  color: var(--primary-white);
-  padding-right: 100px;
-}
-
-.about-container .hero .hero-parts .parts-image img {
-  border-radius: 0 20px 20px 0;
-}
-
-.about-container .section-about {
-  margin-top: 120px;
-  height: 640px;
-
-  background-color: rgba(225, 173, 155, 0.2);
-
-  display: flex;
-
-  /* INTREBARE : DE CE IMAGINEA NU PRIMESTE BORDER RADIUS */
-  border-radius: 20px;
-
-  z-index: 1;
-}
-
-.about-container .section-about .about-info {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-}
-
-.about-container .section-about .about-info div {
-  width: 445px;
-}
-.about-container .section-about .about-info h2 {
-  margin: 0;
-
-  color: var(--primary-peach);
-  font-weight: 500;
-}
-.about-container .section-about .about-info p {
-  margin-top: 40px;
-}
+/* } */
