@@ -12,7 +12,12 @@ const SectionContact = () => {
       </div>
       <div className="contact-button">
         <Redirect to="/contact">
-          <button className="dark-mode">GET IN TOUCH</button>
+          <button
+            className="dark-mode"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            GET IN TOUCH
+          </button>
         </Redirect>
       </div>
     </section>

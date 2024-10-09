@@ -1,4 +1,4 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .locations-container .section-locations {
     display: flex;
     flex-direction: column;
@@ -59,91 +59,220 @@
     flex-direction: column;
 
     width: 255px;
+    color: var(--secondary-black);
   }
 
   .locations-container .location .location-image img {
     height: 100%;
     width: 100%;
   }
-} */
+}
 
-/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
-.locations-container {
-  .section-locations {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1200px) {
+  .locations-container {
+    .section-locations {
+      display: flex;
+      flex-direction: column;
 
-    gap: 120px;
-  }
-
-  .location {
-    .location-info,
-    .location-image {
-      border-radius: 20px;
+      gap: 120px;
     }
 
-    height: 676px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    .location {
+      .location-info,
+      .location-image {
+        border-radius: 20px;
+      }
 
-    .location-info {
-      height: 326px;
-
-      background-color: rgba(225, 173, 155, 0.2);
-
-      background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
-      background-repeat: no-repeat;
-
-      background-position: left 0 bottom 0;
-
+      height: 676px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
+      gap: 24px;
 
-      > div {
+      .location-info {
+        height: 326px;
+
+        background-color: rgba(225, 173, 155, 0.2);
+
+        background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+        background-repeat: no-repeat;
+
+        background-position: left 0 bottom 0;
+
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        gap: 24px;
-
-        width: 540px;
-      }
-
-      h2 {
-        margin: 0;
-        color: var(--primary-peach);
-        font-weight: 500;
-      }
-
-      .location-office {
-        display: flex;
-
-        gap: 30px;
-
-        p {
+        > div {
           display: flex;
           flex-direction: column;
 
-          width: 255px;
+          gap: 24px;
+
+          width: 540px;
+        }
+
+        h2 {
+          margin: 0;
+          color: var(--primary-peach);
+          font-weight: 500;
+        }
+
+        .location-office {
+          display: flex;
+
+          gap: 30px;
+
+          p {
+            display: flex;
+            flex-direction: column;
+
+            width: 255px;
+
+            color: var(--secondary-black);
+          }
+        }
+      }
+
+      .location-image {
+        height: 50%;
+        width: 100%;
+        img {
+          display: none;
         }
       }
     }
 
-    .location-image {
-      height: 50%;
-      width: 100%;
-      img {
-        display: none;
-      }
+    .location.first,
+    .location.third {
+      flex-direction: column-reverse;
+    }
 
-      background-image: url("/public/assets/locations/tablet/image-map-canada.png");
+    .first.location {
+      .location-image {
+        background-image: url("/public/assets/locations/tablet/image-map-canada.png");
+      }
+    }
+
+    .second.location {
+      .location-image {
+        background-image: url("/public/assets/locations/tablet/image-map-australia.png");
+      }
+    }
+
+    .third.location {
+      .location-image {
+        background-image: url("/public/assets/locations/tablet/image-map-uk.png");
+      }
     }
   }
+}
 
-  .location.first,
-  .location.third {
-    flex-direction: column-reverse;
+@media screen and (max-width: 768px) {
+  .locations-container {
+    .section-locations {
+      margin-left: auto;
+      margin-right: auto;
+      width: 375px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .location {
+      height: 714px;
+      display: flex;
+      flex-direction: column-reverse;
+
+      .location-image {
+        height: 320px;
+        width: 100%;
+        img {
+          display: none;
+        }
+      }
+
+      .location-info {
+        height: 394px;
+        background-color: rgba(225, 173, 155, 0.2);
+        background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+        background-repeat: no-repeat;
+
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        > div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+        }
+
+        h2 {
+          margin: 0;
+          color: var(--primary-peach);
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 36px;
+          letter-spacing: 0px;
+        }
+
+        .location-office {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+
+          p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 255px;
+
+            line-height: 25px;
+            font-size: 15px;
+            color: var(--secondary-black);
+          }
+        }
+      }
+    }
+
+    .second.location {
+      flex-direction: column;
+    }
+
+    .first.location {
+      .location-image {
+        background-image: url("/public/assets/locations/tablet/image-map-canada.png");
+        background-position: right;
+      }
+    }
+
+    .second.location {
+      .location-image {
+        background-image: url("/public/assets/locations/tablet/image-map-australia.png");
+        background-position: 80%;
+      }
+    }
+
+    .third.location {
+      .location-image {
+        background-image: url("/public/assets/locations/tablet/image-map-uk.png");
+        background-position: 70%;
+      }
+    }
   }
 }
-/* } */
+
+@media screen and (max-width: 376px) {
+  .locations-container {
+    .location {
+      gap: 0;
+
+      .location-info,
+      .location-image {
+        border-radius: 0;
+      }
+    }
+  }
+}

@@ -1,34 +1,88 @@
-.design-container .hero {
-  height: 252px;
+@media screen and (min-width: 769px) {
+  .design-container {
+    .hero {
+      height: 252px;
 
-  background-color: var(--primary-peach);
-  background-image: url("/assets/web-design/desktop/bg-pattern-intro-web.svg");
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: 100%;
+      background-color: var(--primary-peach);
+      background-image: url("/assets/web-design/desktop/bg-pattern-intro-web.svg");
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      background-position: 100%;
+
+      .hero-parts {
+        height: 100%;
+
+        .parts-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          width: 100%;
+          height: 100%;
+
+          color: var(--primary-white);
+
+          h1 {
+            font-weight: 500;
+          }
+
+          p {
+            width: 400px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
-.design-container .hero .hero-parts {
-  height: 100%;
+@media screen and (max-width: 768px) {
+  .design-container {
+    .hero {
+      background-image: url("/public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+      background-color: var(--primary-peach);
+      background-repeat: no-repeat;
+      height: 320px;
+      max-width: 375px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+
+      .hero-parts {
+        .parts-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+          color: var(--primary-white);
+
+          h1 {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 36px;
+            margin: 0;
+          }
+
+          p {
+            width: 327px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
-.design-container .hero .hero-parts .parts-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: 100%;
-
-  color: var(--primary-white);
-}
-
-.design-container .hero .hero-parts .parts-info h1 {
-  font-weight: 500;
-}
-
-.design-container .hero .hero-parts .parts-info p {
-  width: 400px;
-  text-align: center;
+@media screen and (max-width: 376px) {
+  .design-container {
+    .hero {
+      border-radius: 0px;
+    }
+  }
 }

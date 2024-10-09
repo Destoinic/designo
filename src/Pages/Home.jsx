@@ -3,8 +3,8 @@ import NavBar from "../components/NavBar";
 import "../styling/Home.css";
 import SectionContact from "../components/SectionContact";
 import DesignCell from "../components/DesignCell";
-import { NavLink } from "react-router-dom";
 import QualitiesList from "../components/QualitiesList";
+import Redirect from "../components/Redirect";
 
 const Home = () => {
   return (
@@ -26,16 +26,16 @@ const Home = () => {
                 creating fully responsive websites, app design, and engaging
                 brand experiences. Find out more about our services.
               </p>
-              <button className="dark-mode">
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) => {
-                    return isActive ? "active-link " : "";
-                  }}
+              <Redirect to="/about">
+                <button
+                  className="dark-mode"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                 >
                   LEARN MORE
-                </NavLink>
-              </button>
+                </button>
+              </Redirect>
             </div>
             <div className="parts-image">
               <img

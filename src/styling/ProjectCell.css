@@ -1,11 +1,18 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .project-cell {
-    transition: 0.5s;
-  } */
-/* INTREBARE : on hover nu se coloreaza si h3 */
-/* .project-cell:hover {
+    border-radius: 21px;
+  }
+  /* INTREBARE : on hover nu se coloreaza si h3 */
+  .project-cell:hover {
     color: var(--primary-white);
+    transition: 0.5s;
 
+    .cell-info {
+      h3 {
+        color: var(--primary-white);
+        transition: 0.5s;
+      }
+    }
     background-color: var(--primary-peach);
   }
 
@@ -41,44 +48,87 @@
     margin: 0 32px;
     text-align: center;
   }
-} */
+}
 
-/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
-.project-cell {
-  margin-top: 32px;
-  display: flex;
-  height: 310px;
-  width: 689px;
-
-  .cell-image {
-    width: 339px;
-
-    img {
-      height: 100%;
-
-      border-radius: 20px 0 0 20px;
-    }
-  }
-  .cell-info {
+@media screen and (max-width: 1200px) {
+  .project-cell {
+    margin-top: 32px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 310px;
+    width: 689px;
 
-    height: 100%;
-    background-color: rgba(225, 173, 155, 0.2);
+    .cell-image {
+      width: 339px;
 
-    border-radius: 0 20px 20px 0;
+      img {
+        height: 100%;
 
-    h3 {
-      color: var(--primary-peach);
-      font-weight: 500;
+        border-radius: 20px 0 0 20px;
+      }
     }
 
-    p {
-      margin: 0 32px;
-      text-align: center;
+    .cell-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      height: 100%;
+      background-color: rgba(225, 173, 155, 0.2);
+
+      border-radius: 0 20px 20px 0;
+
+      h3 {
+        color: var(--primary-peach);
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0 32px;
+        text-align: center;
+      }
     }
   }
 }
-/* } */
+
+@media screen and (max-width: 768px) {
+  .project-cell {
+    display: flex;
+    flex-direction: column;
+    height: 478px;
+    width: 327px;
+
+    .cell-image {
+      width: 327px;
+      height: 320px;
+
+      img {
+        height: 320px;
+        width: 327px;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+    .cell-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      height: 100%;
+      background-color: rgba(225, 173, 155, 0.2);
+
+      border-radius: 0 0 20px 20px;
+
+      h3 {
+        font-size: 20px;
+        color: var(--primary-peach);
+        font-weight: 500;
+      }
+
+      p {
+        text-align: center;
+        width: 267px;
+      }
+    }
+  }
+}

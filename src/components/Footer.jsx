@@ -1,9 +1,9 @@
 import "../styling/Footer.css";
 import NavBar from "./NavBar";
 
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <footer>
+    <footer className={className}>
       <div className="office">
         <NavBar mode="dark-mode" className="footer" />
         <hr />
@@ -23,26 +23,60 @@ const Footer = () => {
             </div>
             <div className="socials">
               <div>
-                <img
-                  src="/assets/shared/desktop/icon-facebook.svg"
-                  alt="facebook icon"
-                />
-                <img
-                  src="/assets/shared/desktop/icon-youtube.svg"
-                  alt="youtube icon"
-                />
-                <img
-                  src="/assets/shared/desktop/icon-twitter.svg"
-                  alt="twitter icon"
-                />
-                <img
-                  src="/assets/shared/desktop/icon-pinterest.svg"
-                  alt="pinterest icon"
-                />
-                <img
-                  src="/assets/shared/desktop/icon-instagram.svg"
-                  alt="instagram icon"
-                />
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/assets/shared/desktop/icon-facebook.svg"
+                    alt="facebook icon"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link youtube"
+                >
+                  <img
+                    src="/assets/shared/desktop/icon-youtube.svg"
+                    alt="youtube icon"
+                  />
+                </a>
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link twitter"
+                >
+                  <img
+                    src="/assets/shared/desktop/icon-twitter.svg"
+                    alt="twitter icon"
+                  />
+                </a>
+                <a
+                  href="https://www.pinterest.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link pinterest"
+                >
+                  <img
+                    src="/assets/shared/desktop/icon-pinterest.svg"
+                    alt="pinterest icon"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link instagram"
+                >
+                  <img
+                    src="/assets/shared/desktop/icon-instagram.svg"
+                    alt="instagram icon"
+                  />
+                </a>
               </div>
             </div>
           </div>

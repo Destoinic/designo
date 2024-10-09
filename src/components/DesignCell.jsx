@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../styling/DesignCell.css";
 
-const DesignCell = ({ designName, title, body, backgroundURL }) => {
+const DesignCell = ({ designName, title, body, backgroundURL, onClick }) => {
   return (
-    <li className={`design-${designName} design-cell-container`}>
+    <li
+      className={`design-${designName} design-cell-container`}
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
       <NavLink
         style={{ backgroundImage: `url(${backgroundURL})` }}
         to={`/${designName}-design`}

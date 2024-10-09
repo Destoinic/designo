@@ -6,7 +6,6 @@ import GraphicDesign from "./Pages/GraphicDesign";
 import WebDesign from "./Pages/WebDesign";
 import AppDesign from "./Pages/AppDesign";
 import Contact from "./Pages/Contact";
-// import NavBar from "./components/NavBar";
 import NoMatch from "./Pages/NoMatch";
 
 const App = () => {

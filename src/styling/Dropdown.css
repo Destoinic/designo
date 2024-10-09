@@ -1,0 +1,51 @@
+.links {
+  position: relative;
+
+  .dropdown {
+    z-index: 100;
+    position: absolute;
+    background-color: var(--primary-black);
+    top: 85px;
+    left: -307px;
+    width: 375px;
+    height: 235px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ::before {
+      content: "";
+      position: absolute;
+      z-index: 101;
+      width: 375px;
+      top: 235px;
+      left: 0px;
+      height: 3700px;
+
+      pointer-events: none;
+
+      background-color: var(--primary-black);
+      opacity: 0.08;
+    }
+
+    ul {
+      height: 139px;
+      width: 327px;
+
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap: 32px;
+    }
+
+    a {
+      color: var(--primary-white);
+      font-size: 24px;
+      letter-spacing: 2px;
+
+      ::before {
+      }
+    }
+  }
+}

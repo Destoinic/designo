@@ -1,129 +1,220 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .contact-container .container {
     margin-bottom: 220px;
   }
-  
+
   .contact-container .hero {
     width: auto;
     height: 480px;
-  
+
     background-color: var(--primary-peach);
     background-image: url("/public/assets/home/desktop/bg-pattern-hero-home.svg");
     background-repeat: no-repeat;
     background-position: 10px -120px;
-  
+
     border-radius: 20px;
   }
-  
+
   .contact-container .hero .hero-parts {
     display: flex;
     height: 100%;
   }
-  
+
   .contact-container .hero .parts-info {
     margin-left: 100px;
     width: 50%;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .contact-container .hero .hero-parts .parts-info h1 {
     color: var(--primary-white);
-  
+
     font-weight: 400;
   }
-  
+
   .contact-container .hero .hero-parts .parts-info p {
     color: var(--primary-white);
     padding-right: 100px;
   }
-  
+
   .contact-container .hero .hero-parts .parts-form {
     display: flex;
     flex-direction: column;
   }
-  
+
   .contact-container form {
     display: flex;
     flex-direction: column;
   }
-  
+
   .contact-container .btn {
     margin-top: 24px;
-  
+
     display: flex;
     justify-content: end;
   }
-  
+
   .contact-container button {
     font-size: 15px;
     font-weight: 500;
   }
-} */
+}
 
-/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
-.contact-container {
-  .container {
-    margin-bottom: 220px;
+@media screen and (max-width: 1200px) {
+  .contact-container {
+    .container {
+      margin-bottom: 220px;
 
-    .hero {
-      height: 711px;
-      background-color: var(--primary-peach);
-      background-image: url("/public/assets/home/desktop/bg-pattern-hero-home.svg");
-      background-repeat: no-repeat;
-      background-position: -120px -80px;
-      border-radius: 20px;
+      .hero {
+        height: 711px;
+        background-color: var(--primary-peach);
+        background-image: url("/public/assets/home/desktop/bg-pattern-hero-home.svg");
+        background-repeat: no-repeat;
+        background-position: -120px -80px;
+        border-radius: 20px;
 
-      .hero-parts {
-        margin: 0 58px 0 58px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-
-        .parts-info {
-          margin-top: 70px;
+        .hero-parts {
+          margin: 0 58px 0 58px;
+          height: 100%;
           display: flex;
           flex-direction: column;
 
-          h1 {
-            margin-top: 0;
-            color: var(--primary-white);
-            font-weight: 500;
-          }
-
-          p {
-            color: var(--primary-white);
-          }
-        }
-
-        .parts-form {
-          display: flex;
-          flex-direction: column;
-
-          form {
+          .parts-info {
+            margin-top: 70px;
             display: flex;
             flex-direction: column;
 
-            input {
-              width: 100%;
+            h1 {
+              margin-top: 0;
+              color: var(--primary-white);
+              font-weight: 500;
             }
 
-            textarea {
-              width: 100%;
+            p {
+              color: var(--primary-white);
             }
           }
-        }
 
-        .btn {
-          margin-top: 24px;
+          .parts-form {
+            display: flex;
+            flex-direction: column;
 
-          display: flex;
-          justify-content: end;
+            form {
+              display: flex;
+              flex-direction: column;
+
+              input {
+                width: 100%;
+              }
+
+              textarea {
+                width: 100%;
+              }
+            }
+          }
+
+          .btn {
+            margin-top: 24px;
+
+            display: flex;
+            justify-content: end;
+          }
         }
       }
     }
   }
 }
-/* } */
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    .container {
+      margin-bottom: 320px;
+    }
+
+    .hero {
+      height: 764px;
+      width: 375px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--primary-peach);
+      background-image: url("/public/assets/home/desktop/bg-pattern-hero-home.svg");
+      background-repeat: no-repeat;
+
+      .hero-parts {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        .parts-info {
+          margin-top: 72px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h1 {
+            margin-top: 0;
+            color: var(--primary-white);
+            font-weight: 500;
+            line-height: 36px;
+            font-size: 32px;
+            letter-spacing: 0;
+          }
+
+          p {
+            width: 327px;
+            color: var(--primary-white);
+            font-size: 15px;
+            text-align: center;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .parts-form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        form {
+          width: 311px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          > * {
+            padding-left: 14px;
+          }
+        }
+      }
+
+      .btn {
+        margin-top: 24px;
+
+        display: flex;
+        justify-content: end;
+
+        button {
+          font-weight: 500;
+          letter-spacing: 1px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .contact-container {
+    .container {
+      .hero {
+        border-radius: 0;
+      }
+    }
+  }
+}

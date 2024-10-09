@@ -1,4 +1,4 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .quality div {
     display: flex;
     flex-direction: column;
@@ -11,74 +11,81 @@
 
   .quality p {
     text-align: center;
-    */
-
-/*    width: 70%;*/
-/*  
+    width: 70%;
     color: var(--secondary-black);
   }
 
   .quality h3 {
     color: var(--secondary-black);
   }
-} */
+}
 
-/* @media screen and (max-width: 1200px) and (min-width: 768) {
-.quality .content {
-  display: flex;
-  gap: 48px;
+@media screen and (max-width: 1200px) {
+  .quality {
+    height: 202px;
 
-  img {
-    background-image: url("/public/assets/shared/desktop/bg-pattern-small-circle.svg");
-  }
+    .content {
+      display: flex;
+      gap: 48px;
+      height: 100%;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+      img {
+        background-image: url("/public/assets/shared/desktop/bg-pattern-small-circle.svg");
+      }
 
-    p {
-      text-align: start;
-      color: var(--secondary-black);
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
 
-    }
+        p {
+          text-align: start;
+          color: var(--secondary-black);
+        }
 
-    h3 {
-      color: var(--secondary-black);
+        h3 {
+          color: var(--secondary-black);
+        }
+      }
     }
   }
 }
-} */
 
-/* @media screen and (max-width: 767px) {*/
-.quality .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
+@media screen and (max-width: 768px) {
+  .quality {
+    height: 412px;
 
-  img {
-    background-image: url("/public/assets/shared/desktop/bg-pattern-small-circle.svg");
-  }
+    .content {
+      height: 412px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      img {
+        background-image: url("/public/assets/shared/desktop/bg-pattern-small-circle.svg");
+      }
 
-    h3 {
-      width: 100%;
-      text-align: center;
-      color: var(--secondary-black);
-      letter-spacing: 5px;
-      font-weight: 500;
-    }
+      div {
+        height: 162px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    p {
-      text-align: center;
-      color: var(--secondary-black);
+        h3 {
+          width: 100%;
+          text-align: center;
+          color: var(--secondary-black);
+          letter-spacing: 5px;
+          font-weight: 500;
+        }
+
+        p {
+          text-align: center;
+          color: var(--secondary-black);
+        }
+      }
     }
   }
 }
-/* } */

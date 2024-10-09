@@ -53,7 +53,7 @@ const Contact = () => {
 
         <Countries />
       </div>
-      <Footer />
+      <Footer className="contact-page" />
     </div>
   );
 };

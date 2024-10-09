@@ -1,4 +1,4 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .section-countries {
     margin-top: 120px;
     display: flex;
@@ -16,26 +16,26 @@
 
     background-repeat: no-repeat;
   }
-} */
+}
 
-/* @media screen and (max-width: 1200px) and (min-width: 768px) { */
-.section-countries {
-  margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 58px;
-
-  .country {
+@media screen and (max-width: 1200px) {
+  .section-countries {
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 58px;
 
-    div {
-      background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+    .country {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      background-repeat: no-repeat;
+      div {
+        background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+
+        background-repeat: no-repeat;
+      }
     }
   }
 }
-/* } */
