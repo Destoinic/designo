@@ -7,7 +7,6 @@ const Dropdown = () => {
 
   function onToggle() {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   }
 
   return (
